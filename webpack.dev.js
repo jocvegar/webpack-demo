@@ -5,27 +5,8 @@ const { merge } = require("webpack-merge");
 
 module.exports = merge(common, {
   mode: "development",
-  //   entry: "./src/index.js",
-  //   devtool: false,
   output: {
-    filename: "main.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
-  //   plugins: [
-  //   new HtmlWebpackPlugin({
-  //       template: "./src/template.html",
-  //     }),
-  //   ],
-  //   module: {
-  //     rules: [
-  //       //   {
-  //       //     test: /\.css$/,
-  //       //     use: ["style-loader", "css-loader"],
-  //       //   },
-  //       {
-  //         test: /\.scss$/,
-  //         use: ["style-loader", "css-loader", "sass-loader"],
-  //       },
-  //     ],
-  //   },
 });
